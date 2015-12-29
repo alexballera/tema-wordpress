@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/*
+Theme Name: Portfolio
+Theme URI: http://alexballera.com
+Author: Alex Ballera
+Author URI: http://alexballera.com
+Description: Professional and easy to customize Premium WordPress Theme.
+Version: 1.0
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: blue, gray, green, red, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, custom-background, custom-header, custom-menu, editor-style, featured-image-header, featured-images, post-formats, theme-options, translation-ready
+*/
+
+@import '../portfolio/fonts/css/font-awesome.min.css'; //Comentar si se está online
+@import '../portfolio/styles/vendors/normalize.css'; //Comentar si se está online
+@import './customs/reset';
+@import './variables/var';
+@import './customs/customs';
+@import './mixins/breakpoints';
+@import './partials/header';
+@import './partials/content';
