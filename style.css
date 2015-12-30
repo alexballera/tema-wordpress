@@ -60,10 +60,10 @@ table {
 
 body {
   font-size: 16px;
-  font-family: "FontAwesome", sans-serif; }
+  font-family: "FontAwesome", Arial, sans-serif; }
 
 .header {
-  font-family: "FontAwesome", sans-serif;
+  font-family: "FontAwesome", Arial, sans-serif;
   background-color: #212121;
   color: #F1FFF9;
   height: 4rem;
@@ -80,9 +80,7 @@ body {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      transition: all .3s ease;
-      height: 5rem;
-      line-height: 5rem; } }
+      transition: all .3s ease; } }
   .header__light {
     background-color: #F1FFF9;
     color: #212121; }
@@ -90,26 +88,54 @@ body {
     display: flex;
     justify-content: space-between;
     height: 4rem; }
+    .header__mobile a {
+      text-decoration: none;
+      color: #F1FFF9; }
     .header__mobile--logo {
-      margin-left: 1em;
-      font-size: 2em;
+      margin-left: 2em;
+      font-size: 1.5em;
+      margin-top: .2rem;
       order: 1; }
+      .header__mobile--logo--picture {
+        height: 0; }
+        .header__mobile--logo--picture img {
+          border-radius: 50%;
+          width: 3rem;
+          border: 0.2rem solid #F1FFF9;
+          transition: all 1.2s ease; }
+        .header__mobile--logo--picture img:hover {
+          transform: rotate(360deg);
+          transition: all 1.2s ease;
+          border: 0.2rem solid #FFB040; }
+        .header__mobile--logo--picture figcaption {
+          position: absolute;
+          top: 0;
+          margin-left: 3em; }
+        .header__mobile--logo--picture figcaption:hover {
+          color: #FFB040; }
     .header__mobile--btn {
-      border: 0;
-      margin-right: 2em;
       outline: none;
+      margin-right: 1.5em;
       height: 4rem;
+      width: 4rem;
+      line-height: 4rem;
       order: 2;
       border-radius: 5px;
-      background-color: #212121; }
+      background-color: #212121;
+      box-sizing: border-box;
+      border: 2px solid #212121;
+      font-size: 1.5em; }
       @media only screen and (min-width: 48em) {
         .header__mobile--btn {
           display: none; } }
+    .header__mobile--btn:hover {
+      color: #FFB040;
+      border: 2px solid #FFB040; }
   .header__menu--navbar {
     background-color: #212121; }
     @media only screen and (max-width: 48em) {
       .header__menu--navbar {
-        width: 200px; } }
+        width: 150px; } }
     .header__menu--navbar__light {
       background-color: #F1FFF9; }
   .header__menu--list {
@@ -119,34 +145,43 @@ body {
     transition: height .3s ease; }
     @media only screen and (min-width: 48em) {
       .header__menu--list {
-        height: 80px;
-        margin-right: 2em; } }
+        height: 4rem;
+        margin-right: 3em; } }
     .header__menu--list--show {
-      height: 480px;
+      height: 100%;
       transition: height .3s ease; }
 
 @media only screen and (min-width: 48em) {
   .page_item {
     display: inline-block;
-    margin: 0 .5em;
-    text-align: center; } }
+    margin: 0;
+    text-align: center;
+    min-width: 90px; } }
 .page_item a {
   text-decoration: none;
   color: #F1FFF9;
   width: 100%;
-  padding: 1.5em;
-  display: block; }
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  border-top: 3px solid #212121; }
   @media only screen and (min-width: 48em) {
     .page_item a {
+      box-sizing: border-box;
       padding: 0 .5em; } }
+  .page_item a:hover {
+    box-sizing: border-box;
+    color: #FFB040;
+    border-top: 3px solid #FFB040; }
+    @media only screen and (max-width: 48em) {
+      .page_item a:hover {
+        border-top: 3px solid  grey;
+        background-color: grey; } }
 .page_item__light a {
   color: #212121; }
 
 .content {
   margin-top: 64px; }
-  @media only screen and (min-width: 48em) {
-    .content {
-      margin-top: 80px; } }
   @media only screen and (min-width: 48em) {
     .content__features {
       display: flex;
@@ -168,7 +203,7 @@ body {
     .content__features--block--title {
       font-size: 1.2em;
       font-weight: 700;
-      font-family: "FontAwesome", sans-serif;
+      font-family: "FontAwesome", Arial, sans-serif;
       padding: 1em 0; }
 
 @media only screen and (min-width: 48em) {

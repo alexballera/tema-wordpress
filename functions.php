@@ -7,4 +7,5 @@ function portfolio_scripts_with_jquery()
   wp_enqueue_script( 'custom-script' );
 }
 add_action( 'wp_enqueue_scripts', 'portfolio_scripts_with_jquery' );
+add_theme_support( 'html5', array( 'search-form' ) );
 ?>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
+    <meta name="author" content="<?php bloginfo('admin_email'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>">
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico" />
@@ -23,5 +24,4 @@
                   Para  mejorar la  experiencia..
         </p>
     <![endif]-->
-
       <?php include (TEMPLATEPATH . '/templates/nav.php'); ?>

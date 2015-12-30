@@ -1,8 +1,5 @@
 .content{
   margin-top: 64px;
-  @include respond-to(md) {
-    margin-top: 80px;
-  }
   &__features{
     @include respond-to(md) {
       display: flex;

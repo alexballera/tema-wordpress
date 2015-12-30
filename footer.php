@@ -11,6 +11,7 @@
     <script src="http://localhost/wp-content/themes/portfolio/scripts/vendors/modernizr-2.8.3.min.js"></script>
     <script src="http://localhost/wp-content/themes/portfolio/scripts/vendors/retina.min.js"></script>
     <script src="http://localhost/wp-content/themes/portfolio/scripts/vendors/selectivizr.js"></script>
+    <?php wp_enqueue_script("jquery"); ?>
     <?php wp_footer(); ?>
   </body>
 </html>
